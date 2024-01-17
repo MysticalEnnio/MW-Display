@@ -1,20 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/normalize.css" async />
+        <link rel="stylesheet" href="css/style.css" async />
+        <script src="https://cdn.tailwindcss.com" async></script>
+        <!--<script src="https://cdn.jsdelivr.net/npm/sweetalert2" async></script>-->
+        <script src="js/index.js" defer></script>
+        <title>Document</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css" async>
-    <link rel="stylesheet" href="css/style.css" async>
-    <!--<script src="https://cdn.tailwindcss.com" async></script>-->
-    <!--<script src="https://cdn.jsdelivr.net/npm/sweetalert2" async></script>-->
-    <script src="js/index.js" defer></script>
-    <title>Document</title>
-</head>
-
-<body>
-
-</body>
-
+    <body>
+        <div
+            id="main"
+            class="w-screen h-screen flex justify-center items-center"
+        >
+            <div id="Button-1">
+                <div
+                    class="hexagon w-[280px] h-[320px] bg-[#12d3e7] shadow-lg flex justify-center items-center cursor-pointer"
+                    onmouseenter="document.getElementById('Button-1').classList.toggle('hover', 1)"
+                    onmouseleave="document.getElementById('Button-1').classList.toggle('hover', 0)"
+                >
+                    <p
+                        class="text-white z-10 font-bold text-4xl text-shadow-lb text-center"
+                    >
+                        SECURITY <br />
+                        LV. 1
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
